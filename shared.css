@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif; }
+
+header {
+  width: 100%;
+  background-color: #01546f;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+.toggle__button {
+  width: 35px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none; }
+
+.toggle__button--bar {
+  border-top: 3px solid #00b9ba;
+  margin: 2px; }
+
+.onedata__logo img {
+  height: 50px;
+  width: 50px; }
+
+.nav__lists {
+  list-style-type: none;
+  display: flex;
+  font-weight: 700; }
+  .nav__lists .nav__list {
+    margin: 0 2rem;
+    padding-bottom: 0.6em;
+    transition: all 500ms ease-in; }
+    .nav__lists .nav__list:hover {
+      padding-bottom: 0.4em;
+      border-bottom: 0.2em solid #00b9ba; }
+    .nav__lists .nav__list a {
+      text-decoration: none;
+      color: #00b9ba;
+      padding: 0.6em 0;
+      font-size: 1em;
+      align-items: center; }
+  .nav__lists .selected {
+    transition: all 1s ease-in; }
+    .nav__lists .selected:hover {
+      transform: translatey(5px);
+      border-bottom: none; }
+    .nav__lists .selected a {
+      padding: 0.6em 2em;
+      background: #00b9ba;
+      border-bottom: none;
+      color: #01546f;
+      transition: all 1s ease-in; }
+    .nav__lists .selected a:hover {
+      background: white;
+      color: #00b9ba;
+      border-bottom: none; }
+
+footer {
+  background-color: #01546f; }
+  footer .footer__socials {
+    text-align: center; }
+    footer .footer__socials .social__icons {
+      width: 2.8em;
+      height: 2.8em;
+      margin: 0 1em; }
+      footer .footer__socials .social__icons .reduce {
+        width: 1.2em;
+        height: 1.2em; }
+  footer .hr__footer {
+    border: 1px solid #00b9ba;
+    width: 80%; }
+  footer .footer__copyright p {
+    color: #00b9ba;
+    padding: 1em 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em; }
+
+@media (max-width: 40em) {
+  .toggle__button {
+    display: flex; }
+
+  .nav {
+    display: none; } }
+
+/*# sourceMappingURL=shared.css.map */

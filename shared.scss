@@ -97,49 +97,90 @@ footer{
     background-color: map-get($colors,main);
     color: map-get($colors, ODwhite);
 
-    .footer__socials{
+    .main__footer {
 
-        text-align: center;
-        p{
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-       
-        .social__icons {
-            img {
-                width: 2.8em;
-                height: 2.8em;
-                margin: 0 1em;
-                opacity: 0.5;
-                transition: all 500ms ease-in;
+        display: flex;
+        margin: 0 1.8em 1.8em 1.8em;
+        align-items: center;
+        justify-content: space-between;
 
-                &:hover{
-                    opacity: 1;
-                    transform: rotate(10deg);
-                }
-            }    
+
+        .main__footer--intro {
+           display: flex;
+           flex-direction: column;
+           text-align: left;
+           width: 45%;
+        
+           .footer__logo {
+                width: 5em;
+                height: 5em;
+                margin-bottom: 0.8em 0;
+            }     
         }
 
-        .reduce{
-            img{ 
-                width: 2.4em;
-                height: 2.6em;
-                padding-bottom: 0.4em;
+    
+        .footer__quicklinks {
+            width: 45%;
+            p{
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+           
+            a {
+                text-decoration: none;
+                color: map-get($colors, ODwhite);
+                margin: 1em 0.5em 1em 0;
+                display: block;
             }
         }
     }
-  
 
-    .footer__copyright p{
-        color: map-get($colors,ODwhite);
-        padding: 2em 0;
-        text-align: center;
-        margin: auto;
-        font-size: 1em;
-        border-top: 1px solid map-get($colors,ODwhite);
-        width: 90%;
-        font-weight: 100;
+    .sub__footer{
+        .footer__socials{
+
+            text-align: center;
+            p{
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+           
+            .social__icons {
+                img {
+                    width: 2.8em;
+                    height: 2.8em;
+                    margin: 0 1em;
+                    opacity: 0.5;
+                    transition: all 500ms ease-in;
+    
+                    &:hover{
+                        opacity: 1;
+                        transform: rotate(10deg);
+                    }
+                }    
+            }
+    
+            .reduce{
+                img{ 
+                    width: 2.4em;
+                    height: 2.6em;
+                    padding-bottom: 0.4em;
+                }
+            }
+        }
+      
+    
+        .footer__copyright p{
+            color: map-get($colors,ODwhite);
+            padding: 2em 0;
+            text-align: center;
+            margin: auto;
+            font-size: 1em;
+            border-top: 1px solid map-get($colors,ODwhite);
+            width: 90%;
+            font-weight: 100;
+        } 
     }
+    
 }
 
 
@@ -152,5 +193,19 @@ footer{
     } 
     .nav {
         display: none;
+    }
+
+    footer {
+        .main__footer {
+        flex-direction: column;
+
+            .main__footer--intro {
+                margin-top: 1.3em;
+                width: 100%;
+            }
+            .footer__quicklinks {
+                width: 100%;
+            }
+        }
     }
 }

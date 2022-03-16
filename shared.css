@@ -69,25 +69,49 @@ header {
 footer {
   background-color: #01546f;
   color: white; }
-  footer .footer__socials {
+  footer .main__footer {
+    display: flex;
+    margin: 0 1.8em 1.8em 1.8em;
+    align-items: center;
+    justify-content: space-between; }
+    footer .main__footer .main__footer--intro {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 45%; }
+      footer .main__footer .main__footer--intro .footer__logo {
+        width: 5em;
+        height: 5em;
+        margin-bottom: 0.8em 0; }
+    footer .main__footer .footer__quicklinks {
+      width: 45%; }
+      footer .main__footer .footer__quicklinks p {
+        font-size: 1.3rem;
+        font-weight: 500; }
+      footer .main__footer .footer__quicklinks a {
+        text-decoration: none;
+        color: white;
+        margin: 1em 0.5em 1em 0;
+        display: block; }
+  footer .sub__footer .footer__socials {
     text-align: center; }
-    footer .footer__socials p {
+    footer .sub__footer .footer__socials p {
       font-size: 1.3rem;
       font-weight: 500; }
-    footer .footer__socials .social__icons img {
+    footer .sub__footer .footer__socials .social__icons img {
       width: 2.8em;
       height: 2.8em;
       margin: 0 1em;
       opacity: 0.5;
       transition: all 500ms ease-in; }
-      footer .footer__socials .social__icons img:hover {
+      footer .sub__footer .footer__socials .social__icons img:hover {
         opacity: 1;
         transform: rotate(10deg); }
-    footer .footer__socials .reduce img {
+    footer .sub__footer .footer__socials .reduce img {
       width: 2.4em;
       height: 2.6em;
       padding-bottom: 0.4em; }
-  footer .footer__copyright p {
+  footer .sub__footer .footer__copyright p {
     color: white;
     padding: 2em 0;
     text-align: center;
@@ -102,6 +126,14 @@ footer {
     display: flex; }
 
   .nav {
-    display: none; } }
+    display: none; }
+
+  footer .main__footer {
+    flex-direction: column; }
+    footer .main__footer .main__footer--intro {
+      margin-top: 1.3em;
+      width: 100%; }
+    footer .main__footer .footer__quicklinks {
+      width: 100%; } }
 
 /*# sourceMappingURL=shared.css.map */

@@ -12,6 +12,7 @@
 
 <body>
     <header>
+        <div class="backdrop"></div>
         <nav class = "main__class">
             <div class="onedata__logo">
                 <img src="icons/onedata.png" alt="Onedata Logo">
@@ -39,24 +40,26 @@
         </nav>
        
         <nav class="nav__mobile">
-            <div>
+            <div class="nav__mobile--main">
                 <img src="icons/onedata.png" alt="Onedata Logo" class="nav__mobile--logo">
                 <div class="nav__mobile--quitbutton">
-                    <p>X</p>
+                    <img src="icons/icons8-logout-rounded-left-50 (1).png" alt="exitbutton" class="nav__mobile--quitbuttonimg">
                 </div>
             </div>
            
-            <ul class="nav__mobile--lists">
-                <li class="nav__mobile--list">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav__mobile--list">
-                    <a href="#">About Us</a>
-                </li>
-                <li class="nav__mobile--list">
-                    <a href="#">Our Services</a>
-                </li>
-            </ul>
+            <div class="nav__mobile--sub">
+                <ul class="nav__mobile--lists">
+                    <li class="nav__mobile--list">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav__mobile--list">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="nav__mobile--list removebar">
+                        <a href="#">Our Services</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
@@ -120,6 +123,6 @@
             </div>
         </div>    
     </footer>
-
+<script src="shared.js"></script>
 </body>
 </html>
